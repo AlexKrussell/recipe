@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 414px) {
+    body {
+        background-color: #7ABFBF;
+        margin: 0 auto;
+        width: 414px;
+    }
+
+    /*hamburger menu drop down*/
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        background-color: white;
+    }
+
+    img {
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    a {
+        color: #EB5428;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    a:hover,
+    input:hover {
+        background-color: #590242;
+    }
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    label svg {
+        background-color: #ffffff;
+        display: block;
+        position: relative;
+        transition: background-color .5s ease-out;
+    }
+
+    label span:before,
+    label span:after {
+        background: #ffffff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .5s ease-out;
+        width: 100%;
+    }
+
+    label span:before {
+        top: 5px;
+    }
+
+    label span:after {
+        top: -5px;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked~ul {
+        max-height: 500px;
+    }
+
+    input:checked~label span {
+        background: transparent;
+    }
+
+    input:checked~label:not(.steps) span:before,
+    input:checked~label:not(.steps) span:after {
+        top: 0;
+    }
+
+    /* End of Hamburger menu */
+
+    nav {
+        background-color: white;
+    }
+
+    .social-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .social {
+        border: 2px solid black;
+    }
+
+    .social a {
+        color: #EB5428;
+        text-transform: uppercase;
+        margin: 0px;
+
+    }
+
+    #socials {
+        grid-template-columns: repeat(4, 1fr);
+        border: 2px solid black;
+    }
+
+    #socials nav li {
+        display: inline-block;
+        grid-template-columns: repeat(4, 1fr);
+        border: 2px solid black;
+    }
+
+    #socials li a {
+        position: absolute;
+        text-decoration: none;
+        color: #EB5428;
+        text-transform: uppercase;
+    }
+
+    #socials li a:hover {
+        cursor: pointer;
+        background-color: #EB5428;
+        color: white;
+    }
+}
