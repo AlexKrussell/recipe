@@ -7,13 +7,173 @@ html {
 
 @media screen and (min-width: 414px) {
     body {
+
         background-color: #7ABFBF;
         margin: 0 auto;
         width: 414px;
     }
 
+    h1 {
+        font-size: 40px;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        margin: 0;
+        padding-top: 100px;
+        background-color: #F2F2F2;
+    }
+
+    .save-grid {
+        width: 414px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 35px 30px;
+        grid-gap: 1px 10px;
+        justify-items: center;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+        padding: 0px;
+        list-style-type: none;
+        background-color: #F2F2F2;
+    }
+
+    .save-grid-item {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    #street-tacos {
+        background-color: white;
+
+    }
+
+    #street-tacos img {
+        width: 414px;
+        height: 100%;
+    }
+
+    #street-tacos ul {
+        padding-left: 5px;
+    }
+
+    .details h3,
+    .ingredients h3,
+    .directions h3 {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: 'Bebas Neue', cursive;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .details li {
+        padding: 0px;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        list-style-type: none;
+    }
+
+    #street-tacos p {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .ingredients li {
+        padding: 5px;
+        margin-left: 15px;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .directions {
+        padding: 0px;
+    }
+
+    .directions li {
+        margin-left: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+
     /*hamburger menu drop down*/
-    ul {
+
+    .menu {
+        width: 414px;
+        height: 70px;
+        position: absolute;
+        top: 0;
+        background-color: white;
+        border-bottom: 2px solid rgba(13, 13, 13, .5);
+
+    }
+
+    .burger {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+    }
+
+    .menu-text {
+        position: absolute;
+        top: 40px;
+        left: 23px;
+        color: black;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursiv
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 75px;
+        background-color: #EB5428;
+        width: 250px;
+        height: 70px;
+    }
+
+    .profile {
+        position: absolute;
+        top: 5px;
+        right: 23px;
+    }
+
+    .profile:hover {
+        cursor: pointer;
+    }
+
+    .signin-text {
+        position: relative;
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        color: black;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursiv
+    }
+
+    .search {
+        background-color: #EB5428;
+    }
+
+    .menu nav {
+        background-color: white;
+    }
+
+    nav h2 {
+        visibility: hidden;
+        height: 1px;
+    }
+
+    .menu ul {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -21,29 +181,44 @@ html {
         max-height: 0;
         transition: max-height .2s ease-out;
         background-color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
     }
 
-    img {
-        visibility: hidden;
-        overflow: hidden;
+    .menu img {
+        display: none;
     }
 
-    a {
+
+
+
+
+    .food {
         color: #EB5428;
         text-transform: uppercase;
         text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
-    a:hover,
-    input:hover {
-        background-color: #590242;
+    .menu a {}
+
+    .menu li:hover {}
+
+    .food:hover {
+        color: white;
+        text-align: center;
+        background-color: #EB5428;
+        cursor: pointer;
     }
 
     label {
         cursor: pointer;
         display: inline-block;
-        padding: 28px 20px;
-        position: relative;
+        padding: 25px 25px;
         user-select: none;
     }
 
@@ -92,49 +267,79 @@ html {
 
     /* End of Hamburger menu */
 
-    nav {
+    .socials {
         background-color: white;
+
     }
 
-    .social-container {
+    .socials ul {
+        width: 414px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 35px 30px;
+        grid-gap: 1px 10px;
+        justify-items: center;
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+        padding: 0px;
+        list-style-type: none;
 
     }
 
-    .social {
-        border: 2px solid black;
+    .social-grid-item {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
     }
 
-    .social a {
+    .socials svg {}
+
+    .socials a {
         color: #EB5428;
         text-transform: uppercase;
-        margin: 0px;
-
-    }
-
-    #socials {
-        grid-template-columns: repeat(4, 1fr);
-        border: 2px solid black;
-    }
-
-    #socials nav li {
-        display: inline-block;
-        grid-template-columns: repeat(4, 1fr);
-        border: 2px solid black;
-    }
-
-    #socials li a {
-        position: absolute;
         text-decoration: none;
-        color: #EB5428;
-        text-transform: uppercase;
     }
 
-    #socials li a:hover {
+    .socials li a:hover {
         cursor: pointer;
         background-color: #EB5428;
         color: white;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #7ABFBF;
+        margin: 0 auto;
+        width: 768px;
+    }
+
+    #street-tacos img {
+        width: 768px;
+        height: 100%;
+    }
+
+    .details li {
+        text-align: center;
+    }
+
+    .mid-grid {
+        width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1px 10px;
+
+
+
+        padding: 0px;
+
+
+    }
+
+    .mid-grid-item {
+        display: grid;
+
+        padding: 5px;
     }
 }
