@@ -530,15 +530,18 @@ html {
     /*Start of social menu*/
     .socials {
         background-color: white;
+        height: 20px;
     }
 
     .socials ul {
-        width: 768px;
+        width: 500px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 35px 30px;
-        grid-gap: 1px 10px;
+        grid-gap: 1px 1px;
         justify-items: center;
+        position: absolute;
+        right: 150px;
         font-size: 20px;
         font-family: 'Bebas Neue', cursive;
         padding: 0px;
@@ -573,16 +576,18 @@ html {
         background-color: white;
         font-size: 20px;
         font-family: 'Bebas Neue', cursive;
-        text-align: left;
+        text-align: center;
         padding-top: 10px;
     }
 
     footer p {
         margin: 0px;
+        padding-right: 450px;
     }
 
     footer img {
         width: 175px;
         height: 175px;
+        padding-right: 450px;
     }
 }
