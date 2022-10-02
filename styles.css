@@ -5,9 +5,9 @@ html {
     margin: 0 auto;
 }
 
+/*START OF 414 WIDTH*/
 @media screen and (min-width: 414px) {
     body {
-
         background-color: #7ABFBF;
         margin: 0 auto;
         width: 414px;
@@ -46,7 +46,6 @@ html {
 
     #street-tacos {
         background-color: #F2F2F2;
-
     }
 
     #street-tacos img {
@@ -58,18 +57,18 @@ html {
         padding-left: 5px;
     }
 
-    .details h3,
-    .ingredients h3,
-    .directions h3,
-    .side-dish h3 {
+    #street-tacos h2,
+    .ingredients h2,
+    .directions h2,
+    .side-dish h2 {
         text-transform: uppercase;
-        font-size: 25px;
+        font-size: 30px;
         font-family: 'Bebas Neue', cursive;
         margin-bottom: 0;
         text-align: center;
     }
 
-    .details li {
+    .details-grid-item {
         padding: 0px;
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
@@ -103,8 +102,6 @@ html {
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
     }
-
-    /*hamburger menu drop down*/
 
     .menu {
         width: 414px;
@@ -163,17 +160,28 @@ html {
     .search-icon {
         position: absolute;
         top: 100px;
-        right: 147px;
-        height: 47px;
-        width: 46px;
+        margin-left: 312px;
+        height: 45px;
+        width: 45px;
         background-color: #EB5428;
+    }
+
+    .search-bar input {
+        position: absolute;
+        top: 100px;
+        margin-left: 50px;
+        height: 40px;
+        width: 300px;
+        border: 2px solid #EB5428;
     }
 
     .menu nav {
         background-color: white;
     }
 
-    h2 {
+    .menu h2,
+    .search-bar h2,
+    .socials h2 {
         visibility: hidden;
         height: 1px;
     }
@@ -211,22 +219,6 @@ html {
         text-align: center;
     }
 
-    form {
-        position: absolute;
-        top: 100px;
-        left: 145px;
-        display: block;
-        width: 300px;
-        background-color: white;
-        color: gray;
-        border: 1px solid #EB5428;
-    }
-
-    input {
-        width: 100%;
-        height: 40px;
-    }
-
     .food {
         color: #EB5428;
         text-transform: uppercase;
@@ -242,6 +234,10 @@ html {
         text-align: center;
         background-color: #EB5428;
         cursor: pointer;
+    }
+
+    .save-grid-item {
+        display: grid;
     }
 
     .save-grid-item:hover {
@@ -304,9 +300,6 @@ html {
         top: 0;
     }
 
-    /* End of Hamburger menu */
-
-    /*Start of social menu*/
     .socials {
         background-color: white;
     }
@@ -344,16 +337,51 @@ html {
         color: white;
     }
 
-    /*end of social menu*/
-
-    /*start of side dishes*/
-    .side-dish h3 {
-        margin-top: 0px;
+    .side-dish-grid {
+        display: grid;
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-template-columns: 1fr 2fr;
     }
 
-    /*end of side dishes*/
+    .side-dish h2 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
 
-    /*start of footer*/
+    .side-dish h3 {
+        font-size: 25px;
+        font-family: 'Bebas Neue', cursive;
+        margin: 0;
+    }
+
+    .side-dish img {
+        height: 110px;
+        width: 110px;
+        margin-left: 10px;
+    }
+
+    dd {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+
+    dt {
+        display: block;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        margin-bottom: -45px;
+        margin-top: 30px;
+    }
+
+    .side-dish svg {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
     footer {
         width: 414px;
         background-color: white;
@@ -373,10 +401,11 @@ html {
     }
 }
 
+/*END OF 414 WIDTH*/
+
+/*START of 768 WIDTH*/
 @media screen and (min-width: 768px) {
     body {
-        background-color: #7ABFBF;
-        margin: 0 auto;
         width: 768px;
     }
 
@@ -417,21 +446,20 @@ html {
     .search-icon {
         position: fixed;
         top: 12px;
-        right: 275px;
-        height: 47px;
+        margin-left: 620px;
+        height: 46px;
         width: 46px;
         background-color: #EB5428;
         z-index: 100;
     }
 
-    form {
+    .search-bar input {
         position: fixed;
         top: 12px;
-        left: 500px;
-        display: block;
+        margin-left: 350px;
+        height: 40px;
         width: 300px;
-        background-color: white;
-        border: 1px solid #EB5428;
+        border: 2px solid #EB5428;
         z-index: 100;
     }
 
@@ -510,7 +538,7 @@ html {
         height: 100%;
     }
 
-    .details li {
+    .details-grid-item {
         text-align: center;
     }
 
@@ -541,11 +569,10 @@ html {
         grid-gap: 1px 1px;
         justify-items: center;
         position: absolute;
-        right: 150px;
+        margin-left: 275px;
         font-size: 20px;
         font-family: 'Bebas Neue', cursive;
         padding: 0px;
-        margin: 0px;
         list-style-type: none;
     }
 
@@ -568,9 +595,26 @@ html {
         color: white;
     }
 
-    /*end of social menu*/
+    .side-dish-grid {
+        display: inline-grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 120px 1fr 120px 1fr;
+        grid-row-gap: 30px
+    }
 
-    /*start of footer*/
+    .side-dish img {
+        margin-left: 0px;
+    }
+
+    dt {
+        position: absolute;
+        padding-top: 15px;
+    }
+
+    .stars {
+        margin-left: 65px;
+    }
+
     footer {
         width: 768px;
         background-color: white;
@@ -589,5 +633,203 @@ html {
         width: 175px;
         height: 175px;
         padding-right: 450px;
+    }
+}
+
+/*END OF 768 WIDTH*/
+
+/*START of 1280 WIDTH*/
+@media screen and (min-width: 1280px) {
+    body {
+        background-color: #7ABFBF;
+        margin: 0 auto;
+        width: 1280px;
+    }
+
+    .menu {
+        width: 1280px;
+        height: 105px;
+    }
+
+    .menu ul {
+        left: 285px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 75px;
+        padding: 15px;
+    }
+
+    .menu li a {
+        margin-top: -50px;
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 140px;
+        margin-left: 755px;
+        height: 45px;
+        width: 45px;
+        z-index: 98;
+    }
+
+    .search-bar input {
+        position: absolute;
+        top: 140px;
+        margin-left: 485px;
+        height: 40px;
+        width: 300px;
+        border: 2px solid #EB5428;
+        z-index: 98;
+    }
+
+    #street-tacos h1 {
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 50px;
+    }
+
+    #street-tacos ul {
+        padding-left: 0px;
+    }
+
+    #street-tacos img {
+        width: 550px;
+        height: 100%;
+        margin-left: 80px;
+        background-color: #F2F2F2;
+    }
+
+    .save-grid {
+        position: absolute;
+        padding-top: 20px;
+        grid-template-rows: repeat(8, 40px);
+        grid-template-columns: 1fr;
+        width: 78px;
+        height: 801px;
+        border: 2px solid #EB5428;
+        background-color: transparent;
+    }
+
+    .save-grid-item:nth-of-type(1) {
+        order: 1;
+    }
+
+    .save-grid-item:nth-of-type(2) {
+        order: 3;
+    }
+
+    .save-grid-item:nth-of-type(3) {
+        order: 5;
+    }
+
+    .save-grid-item:nth-of-type(4) {
+        order: 7;
+    }
+
+    .save-grid-item:nth-of-type(5) {
+        order: 2;
+    }
+
+    .save-grid-item:nth-of-type(6) {
+        order: 4;
+    }
+
+    .save-grid-item:nth-of-type(7) {
+        order: 6;
+    }
+
+    .save-grid-item:nth-of-type(8) {
+        order: 8;
+    }
+
+    #street-tacos p {
+        position: relative;
+        bottom: 835px;
+        left: 650px;
+        width: 600px;
+        line-height: 2;
+    }
+
+    .detail-box {
+        position: absolute;
+        top: 1092px;
+        width: 1280px;
+        background-color: black;
+        color: #7ABFBF;
+    }
+
+    #street-tacos h2 {}
+
+    .details-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        padding-bottom: 10px;
+    }
+
+    .details-grid-item {
+        display: grid;
+        column-gap: 30px;
+    }
+
+    .mid-grid {
+        position: static;
+        top: 1300px;
+        margin-bottom: 400px;
+        width: 1280px;
+        grid-template-columns: 1fr 5fr;
+        margin-top: -170px;
+    }
+
+    .directions {
+        position: absolute;
+        top: 1300px;
+        width: 1050px;
+    }
+
+    .side-dish {
+        margin-left: 45px;
+        margin-top: -390px;
+    }
+
+    .side-dish-grid {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px 60px;
+    }
+
+    .side-grid-item {
+        grid-row-end: 3;
+    }
+
+    .side-dish-grid img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .socials ul {
+        margin-left: 680px;
+        margin-top: 30px;
+        grid-gap: 1px 75px;
+    }
+
+    footer {
+        width: 1280px;
+    }
+
+    footer img {
+        margin-left: -600px;
+    }
+
+    footer p {
+        text-align: center;
+        margin-left: 230px;
+    }
+
+    footer div {
+        position: absolute;
+        top: 2150px;
     }
 }
