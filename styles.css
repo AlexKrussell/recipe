@@ -5,6 +5,10 @@ html {
     margin: 0 auto;
 }
 
+* {
+    transition: all 1s;
+}
+
 /*START OF 414 WIDTH*/
 @media screen and (min-width: 414px) {
     body {
@@ -638,7 +642,7 @@ html {
 
 /*END OF 768 WIDTH*/
 
-/*START of 1280 WIDTH*/
+/*START OF 1280 WIDTH*/
 @media screen and (min-width: 1280px) {
     body {
         background-color: #7ABFBF;
@@ -652,7 +656,7 @@ html {
     }
 
     .menu ul {
-        left: 285px;
+        margin-left: 275px;
     }
 
     .logo {
@@ -760,8 +764,6 @@ html {
         color: #7ABFBF;
     }
 
-    #street-tacos h2 {}
-
     .details-grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -833,3 +835,40 @@ html {
         top: 2150px;
     }
 }
+
+/*END OF 1280 WIDTH*/
+
+/*START OF PRINT STYLES*/
+@media print {
+    body {
+        margin: .5in;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: block;
+        color: black;
+        background-color: white;
+        font-size: 16px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 20px;
+    }
+
+
+    .save-grid,
+    img,
+    .side-dish,
+    .socials,
+    .menu,
+    .search-bar {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
+
+/*END OF PRINT STYLES*/
