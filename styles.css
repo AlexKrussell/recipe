@@ -6,7 +6,7 @@ html {
 }
 
 * {
-    transition: all 1s;
+    transition: all .75s;
 }
 
 /*START OF 414 WIDTH*/
@@ -345,6 +345,12 @@ html {
         display: grid;
         grid-template-rows: 150px 150px 150px 150px;
         grid-template-columns: 1fr 2fr;
+    }
+
+    .side-grid-item:hover,
+    .side-dish-grid img:hover {
+        background-color: #EB5428;
+        cursor: pointer;
     }
 
     .side-dish h2 {
